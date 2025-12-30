@@ -1,0 +1,31 @@
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\appsettings.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\blood hospital website.staticwebassets.runtime.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\blood hospital website.exe
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\blood hospital website.deps.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\blood hospital website.runtimeconfig.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\blood hospital website.dll
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\bin\Debug\net8.0\blood hospital website.pdb
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.AssemblyInfoInputs.cache
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.AssemblyInfo.cs
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.csproj.CoreCompileInputs.cache
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.RazorAssemblyInfo.cache
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.RazorAssemblyInfo.cs
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.sourcelink.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets\msbuild.blood hospital website.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets\msbuild.build.blood hospital website.props
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.blood hospital website.props
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.blood hospital website.props
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\scopedcss\bundle\blood hospital website.styles.css
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\scopedcss\projectbundle\blood hospital website.bundle.scp.css
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.dll
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\refint\blood hospital website.dll
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.pdb
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\blood hospital website.genruntimeconfig.cache
+C:\Users\kerem\OneDrive\Desktop\blood hospital website\obj\Debug\net8.0\ref\blood hospital website.dll

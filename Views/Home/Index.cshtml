@@ -1,3 +1,197 @@
 ﻿@{
     Layout = null;
 }
+
+<html>
+
+    <head>
+        <title>Blood Hospital</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <style>
+            html {scroll-behavior: smooth;}
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Share Tech Mono', monospace;
+            }
+
+            .menu{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px 50px;
+                background-color: rgba(0, 0, 0, 0.8);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                box-sizing: border-box;
+                z-index: 999;
+            }
+
+            .menu a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin-left: 50px;
+            }
+
+            .menu a:hover {
+                color: #ff0000;
+                cursor: pointer;
+            }
+
+            .bolum{
+                min-height: 100vh;
+                width: %100;
+
+                padding: 0px;
+            }
+
+            .baslik{
+                color: red;
+                margin: 0;
+                padding: 0;
+            }
+
+            .paragraf{
+                color: white;
+            }
+
+            .anasayfa{
+                background-color: black;
+                height: 100vh;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .anasayfa h1{
+                font-size: 8rem;
+                font-weight: bold;
+            }
+
+            .anasayfa p{
+                font-size: 2rem;
+            }
+
+            .anasayfa a{
+                background-color: black;
+                color: red;
+                border: 2px solid red;
+                padding: 20px 50px;
+                font-size: 2rem;
+                border-radius: 8px;
+            }
+
+            .anasayfa a:hover{
+                background-color: red;
+                color: black;
+                cursor: pointer;
+            }
+
+            .hikaye{
+                background-color: gray;
+            }
+
+            .screenshots{
+                background-color: black;
+            }
+
+            .speedrunners{
+                background-color: gray;
+            }
+
+            .iletisim{
+                background-color: black;
+            }
+
+            .extra{
+                background-color: gray;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+        <nav class="menu">
+            <a class="logo" href="#anasayfa">Bloody Hospital</a>
+            <div class="linkler">
+                <a href="#hikaye">Hikaye</a>
+                <a href="#screenshots">Ekran Görüntüleri</a>
+                <a href="#speedrunners">Skorlar</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+        </nav>
+
+
+
+
+        <div class="anasayfa bolum" id="anasayfa">
+            <h1 class="baslik">BLOODY HOSPITAL</h1>
+            <p class="paragraf">lorem ipsum dolor sit amet</p>
+            <a class="oyna-buton">Oyna</a>
+        </div>
+
+
+
+
+        <div class="hikaye bolum" id="hikaye">
+            <h1 class="baslik">
+                Hikayeler
+            </h1>
+        </div>
+
+
+
+
+
+
+        <div class="screenshots bolum" id="screenshots">
+            <h1 class="baslik">
+                screenshots
+            </h1>
+        </div>
+
+
+
+
+
+        <div class="speedrunners bolum" id="speedrunners">
+            <h1 class="baslik">
+                Speedrunners
+            </h1>
+        </div>
+
+
+
+
+
+        <div class="iletisim bolum" id="iletisim">
+            <h1 class="baslik">
+                feedback
+            </h1>
+        </div>
+
+
+
+
+
+        <div class="extra bolum">
+            <h1 class="baslik">
+                extra
+            </h1>
+        </div>
+        
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "blood hospital website/1.0.0": {
+        "runtime": {
+          "blood hospital website.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "blood hospital website/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
