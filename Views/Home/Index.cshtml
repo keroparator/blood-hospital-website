@@ -2,196 +2,168 @@
     Layout = null;
 }
 
+<!DOCTYPE html>
+
 <html>
+<head>
+    <title>Blood Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="~/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu">
+        <a class="logo" href="#anasayfa">Bloody Hospital</a>
+        <div class="linkler">
+            <a href="#hikaye">Hikaye</a>
+            <a href="#screenshots">Ekran Görüntüleri</a>
+            <a href="#speedrunners">Skorlar</a>
+            <a href="#iletisim">İletişim</a>
+        </div>
+    </nav>
 
-    <head>
-        <title>Blood Hospital</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <div class="anasayfa bolum" id="anasayfa">
+        <h1 class="baslik">BLOODY HOSPITAL</h1>
+        <p class="paragraf">lorem ipsum dolor sit amet</p>
+        <a class="oyna-buton">Oyna</a>
+    </div>
 
-        <style>
-            html {scroll-behavior: smooth;}
-            body{
-                margin: 0;
-                padding: 0;
-                font-family: 'Share Tech Mono', monospace;
-            }
-
-            .menu{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                padding: 20px 50px;
-                background-color: rgba(0, 0, 0, 0.8);
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                box-sizing: border-box;
-                z-index: 999;
-            }
-
-            .menu a{
-                color: white;
-                text-decoration: none;
-                font-size: 1.2rem;
-                margin-left: 50px;
-            }
-
-            .menu a:hover {
-                color: #ff0000;
-                cursor: pointer;
-            }
-
-            .bolum{
-                min-height: 100vh;
-                width: %100;
-
-                padding: 0px;
-            }
-
-            .baslik{
-                color: red;
-                margin: 0;
-                padding: 0;
-            }
-
-            .paragraf{
-                color: white;
-            }
-
-            .anasayfa{
-                background-color: black;
-                height: 100vh;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .anasayfa h1{
-                font-size: 8rem;
-                font-weight: bold;
-            }
-
-            .anasayfa p{
-                font-size: 2rem;
-            }
-
-            .anasayfa a{
-                background-color: black;
-                color: red;
-                border: 2px solid red;
-                padding: 20px 50px;
-                font-size: 2rem;
-                border-radius: 8px;
-            }
-
-            .anasayfa a:hover{
-                background-color: red;
-                color: black;
-                cursor: pointer;
-            }
-
-            .hikaye{
-                background-color: gray;
-            }
-
-            .screenshots{
-                background-color: black;
-            }
-
-            .speedrunners{
-                background-color: gray;
-            }
-
-            .iletisim{
-                background-color: black;
-            }
-
-            .extra{
-                background-color: gray;
-            }
-        </style>
-
-    </head>
-
-
-    <body>
-
-        <nav class="menu">
-            <a class="logo" href="#anasayfa">Bloody Hospital</a>
-            <div class="linkler">
-                <a href="#hikaye">Hikaye</a>
-                <a href="#screenshots">Ekran Görüntüleri</a>
-                <a href="#speedrunners">Skorlar</a>
-                <a href="#iletisim">İletişim</a>
+    <div class="hikaye bolum" id="hikaye">
+        <div class="story-container" style="margin: 0 auto;">
+            <div class="story-row">
+                <div class="story-image-placeholder"></div>
+                <div class="story-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                </div>
             </div>
-        </nav>
-
-
-
-
-        <div class="anasayfa bolum" id="anasayfa">
-            <h1 class="baslik">BLOODY HOSPITAL</h1>
-            <p class="paragraf">lorem ipsum dolor sit amet</p>
-            <a class="oyna-buton">Oyna</a>
+            <div class="story-row">
+                <div class="story-image-placeholder"></div>
+                <div class="story-text">
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                    </p>
+                </div>
+            </div>
+            <div class="story-row">
+                <div class="story-image-placeholder"></div>
+                <div class="story-text">
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                    </p>
+                </div>
+            </div>
         </div>
+    </div>
 
-
-
-
-        <div class="hikaye bolum" id="hikaye">
-            <h1 class="baslik">
-                Hikayeler
-            </h1>
+    <div class="screenshots bolum" id="screenshots">
+        <div class="slider-container">
+            <div class="slider-track">
+                @if (ViewBag.Resimler != null)
+                {
+                    int i = 0;
+                    foreach (var resimAdi in ViewBag.Resimler)
+                    {
+                        var sinif = (i == 0) ? "slide active" : "slide";
+                        <img src="~/img/screenshots/@resimAdi" class="@sinif" alt="Screenshot" onclick="imgClick(this)">
+                        i++;
+                    }
+                }
+                else
+                {
+                    <p style="color:red;">Klasörde resim yok!</p>
+                }
+            </div>
         </div>
+    </div>
 
+<div class="speedrunners bolum" id="speedrunners">
+    <h1 class="baslik">EN İYİ KAÇIŞLAR</h1>
+    
+    <div class="tablo-container">
+        <table class="skor-tablosu">
+            <thead>
+                <tr>
+                    <th>SIRA</th>
+                    <th>OYUNCU</th>
+                    <th>SÜRE</th>
+                    <th>ÖLÜM SAYISI</th>
+                    <th>TARİH</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewBag.Skorlar != null)
+                {
+                    int sira = 1;
+                    foreach (var skor in ViewBag.Skorlar)
+                    {
+                        // 1. sıradakine özel 'sampiyon' sınıfı ekliyoruz
+                        string satirClass = (sira == 1) ? "sampiyon" : "";
+                        
+                        <tr class="@satirClass">
+                            <td>#@sira</td>
+                            <td>@skor.OyuncuAdi</td>
+                            <td>@skor.Sure</td>
+                            <td>@skor.OlumSayisi</td>
+                            <td>@skor.Tarih.ToString("dd.MM.yyyy")</td>
+                        </tr>
+                        sira++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" style="text-align:center; color:red;">
+                            HENÜZ VERİ GİRİŞİ YAPILMADI
+                        </td>
+                    </tr>
+                }
+                </tbody>
+        </table>
+    </div>
+</div>
 
+    <div class="iletisim bolum" id="iletisim">
+        <h1 class="baslik">feedback</h1>
+    </div>
 
+    <div class="extra bolum">
+        <h1 class="baslik">extra</h1>
+    </div>
 
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
 
+        function updateClasses() {
+            slides.forEach(s => {
+                s.className = 'slide';
+            });
+            slides[currentIndex].classList.add('active');
+            let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            slides[prevIndex].classList.add('prev');
+            let nextIndex = (currentIndex + 1) % slides.length;
+            slides[nextIndex].classList.add('next');
+        }
 
-        <div class="screenshots bolum" id="screenshots">
-            <h1 class="baslik">
-                screenshots
-            </h1>
-        </div>
+        function imgClick(element) {
+            if (element.classList.contains('prev')) {
+                slideChange(-1);
+            } else if (element.classList.contains('next')) {
+                slideChange(1);
+            }
+        }
 
+        function slideChange(direction) {
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            updateClasses();
+        }
 
-
-
-
-        <div class="speedrunners bolum" id="speedrunners">
-            <h1 class="baslik">
-                Speedrunners
-            </h1>
-        </div>
-
-
-
-
-
-        <div class="iletisim bolum" id="iletisim">
-            <h1 class="baslik">
-                feedback
-            </h1>
-        </div>
-
-
-
-
-
-        <div class="extra bolum">
-            <h1 class="baslik">
-                extra
-            </h1>
-        </div>
-        
-    </body>
-
+        if(slides.length > 0) {
+            updateClasses();
+        }
+    </script>
+</body>
 </html>

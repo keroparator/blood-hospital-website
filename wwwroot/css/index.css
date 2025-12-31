@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 50px;
+}
+
+.menu a:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.bolum {
+
+    height: auto;
+    width: 100%;
+    padding: 0 0 100px 0;
+}
+
+.baslik {
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.paragraf {
+    color: white;
+}
+
+.anasayfa {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anasayfa h1 {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.anasayfa p {
+    font-size: 2rem;
+}
+
+.anasayfa a {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+    padding: 20px 50px;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.anasayfa a:hover {
+    background-color: red;
+    color: black;
+    cursor: pointer;
+}
+
+.hikaye {
+    background-color: gray;
+    padding-top: 100px;
+}
+
+.screenshots {
+    background-color: black;
+}
+
+.speedrunners {
+    background-color: #333;
+    /* Slightly darker than gray for better contrast with the table */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.speedrunners .baslik {
+    font-size: 5rem;
+    margin-bottom: 60px;
+    text-align: center;
+    text-shadow: 4px 4px 0px #000;
+}
+
+/* TABLO TASARIMI */
+.tablo-container {
+    width: 85%;
+    max-width: 1400px;
+    overflow-x: auto;
+    /* Küçük ekranlarda taşarsa */
+}
+
+.skor-tablosu {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 1.5rem;
+    /* Genel yazı boyutu */
+}
+
+.skor-tablosu thead {
+    background-color: #990000;
+    /* Koyu kırmızı */
+}
+
+.skor-tablosu th {
+    padding: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 4px solid red;
+}
+
+.skor-tablosu td {
+    padding: 25px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.skor-tablosu tbody tr {
+    transition: background-color 0.3s;
+}
+
+.skor-tablosu tbody tr:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* 1. OLAN ŞAMPİYONUN TASARIMI */
+.skor-tablosu .sampiyon {
+    background-color: rgba(255, 215, 0, 0.15) !important;
+    color: #ffd700 !important;
+    /* Altın rengi */
+    font-weight: bold;
+    font-size: 1.8rem;
+    box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.skor-tablosu .sampiyon td {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+.skor-tablosu .sampiyon td:first-child {
+    font-size: 2.5rem;
+    /* Sıra numarası kocaman olsun */
+}
+
+.iletisim {
+    background-color: black;
+}
+
+.extra {
+    background-color: gray;
+}
+
+.story-container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.story-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.story-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-image-placeholder {
+    width: 45%;
+    height: 300px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.story-text {
+    width: 45%;
+}
+
+.story-text p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 850px;
+    height: 480px;
+    object-fit: cover;
+    border: 3px solid #333;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+    transform: scale(0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 10;
+    transform: translateX(0) scale(1);
+    border-color: red;
+    box-shadow: 0 0 30px red;
+}
+
+.slide.next {
+    opacity: 0.5;
+    z-index: 5;
+    transform: translateX(70%) scale(0.8);
+    filter: grayscale(100%);
+}
+
+.slide.prev {
+    opacity: 0.5;
+    z-index: 5;
+    transform: translateX(-70%) scale(0.8);
+    filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+    .slide {
+        width: 90%;
+        height: 250px;
+    }
+
+    .slide.next {
+        transform: translateX(100%) scale(0.5);
+        opacity: 0;
+    }
+
+    .slide.prev {
+        transform: translateX(-100%) scale(0.5);
+        opacity: 0;
+    }
+}

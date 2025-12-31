@@ -5,12 +5,56 @@
       "PackagePath": "staticwebassets\\blood hospital website.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
       "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_1.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_10.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_2.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_3.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_4.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_5.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_6.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_7.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_8.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_9.jpg",
+      "PackagePath": "staticwebassets\\img\\screenshots\\cat_9.jpg"
     },
     {
       "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\js\\site.js",
