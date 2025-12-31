@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4a9sqWp8qgdouNKWzPEnqBjdjRG/XmzMnIenqHeJO+A=",
+  "Hash": "bq0Yck+LNZXv4XkAdr64l2JxCPxUojjmGTP/IgqTpRE=",
   "Source": "blood hospital website",
   "BasePath": "_content/blood hospital website",
   "Mode": "Default",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\favicon.ico",
-      "SourceId": "blood hospital website",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\",
-      "BasePath": "_content/blood hospital website",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_1.jpg",

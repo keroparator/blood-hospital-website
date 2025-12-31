@@ -11,5 +11,6 @@ namespace blood_hospital_website.Data // Örn: blood_hospital_website.Data
         }
 
         public DbSet<Skor> Skorlar { get; set; }
+        public DbSet<Abone> Aboneler { get; set; }
     }
 }

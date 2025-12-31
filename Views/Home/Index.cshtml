@@ -25,8 +25,8 @@
 
     <div class="anasayfa bolum" id="anasayfa">
         <h1 class="baslik">BLOODY HOSPITAL</h1>
-        <p class="paragraf">lorem ipsum dolor sit amet</p>
-        <a class="oyna-buton">Oyna</a>
+        <p class="paragraf">Dünyanın en korkunç oyunu</p>
+        <a class="oyna-buton" href="https://github.com/keroparator/blood-hospital-website">Oyna</a>
     </div>
 
     <div class="hikaye bolum" id="hikaye">
@@ -125,13 +125,48 @@
     </div>
 </div>
 
-    <div class="iletisim bolum" id="iletisim">
-        <h1 class="baslik">feedback</h1>
-    </div>
 
-    <div class="extra bolum">
-        <h1 class="baslik">extra</h1>
-    </div>
+
+<div class="iletisim bolum" id="iletisim">
+    <form action="/Home/IletisimGonder" method="post" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+        
+        <h1 class="baslik" style="text-align: center; margin-bottom: 10px; padding-top: 50px;">BİZİMLE İLETİŞİME GEÇİN</h1>
+
+        @if (TempData["Mesaj"] != null)
+        {
+            <div style="background-color: #111; color: #0f0; border: 1px solid #0f0; padding: 15px; text-align: center;">
+                @TempData["Mesaj"]
+            </div>
+        }
+        @if (TempData["Hata"] != null)
+        {
+            <div style="background-color: #111; color: red; border: 1px solid red; padding: 15px; text-align: center;">
+                @TempData["Hata"]
+            </div>
+        }
+
+        <div style="display: flex; gap: 10px;">
+            <input type="text" name="ad" placeholder="ADINIZ" required 
+                   style="flex:1; padding: 15px; background: #000; border: 2px solid #333; color: white; font-family: inherit;">
+            
+            <input type="email" name="email" placeholder="MAİL ADRESİNİZ" required 
+                   style="flex:1; padding: 15px; background: #000; border: 2px solid #333; color: white; font-family: inherit;">
+        </div>
+
+        <textarea name="mesaj" rows="5" placeholder="MESAJINIZI BURAYA YAZIN..." required
+                  style="padding: 15px; background: #000; border: 2px solid #333; color: white; font-family: inherit; resize: vertical;"></textarea>
+
+        <button type="submit" 
+                style="padding: 15px; background: #a00; color: white; border: none; font-weight: bold; cursor: pointer; font-size: 1.1rem; transition: 0.3s;">
+            GÖNDER
+        </button>
+
+    </form>
+</div>
+
+
+
+
 
     <script>
         let slides = document.querySelectorAll('.slide');

@@ -184,17 +184,7 @@ body {
     background-color: black;
 }
 
-.extra {
-    background-color: gray;
-}
 
-.story-container {
-    width: 80%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-}
 
 .story-row {
     display: flex;
@@ -280,6 +270,8 @@ body {
     filter: grayscale(100%);
 }
 
+
+
 @media (max-width: 768px) {
     .slide {
         width: 90%;
@@ -295,4 +287,8 @@ body {
         transform: translateX(-100%) scale(0.5);
         opacity: 0;
     }
+
+
+
+
 }

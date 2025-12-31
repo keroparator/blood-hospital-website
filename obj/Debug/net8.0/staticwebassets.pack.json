@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "C:\\Users\\kerem\\OneDrive\\Desktop\\blood hospital website\\wwwroot\\img\\screenshots\\cat_1.jpg",
       "PackagePath": "staticwebassets\\img\\screenshots\\cat_1.jpg"
     },
