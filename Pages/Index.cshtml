@@ -1,0 +1,82 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="hero">
+    <h1>BLOODY HOSPITAL</h1>
+    <p>DÜNYANIN EN KORKUNÇ OYUNU</p>
+    <a href="https://github.com/keroparator/bloody-hospital-website" target="_blank" class="btn-download">HEMEN İNDİR</a>
+</div>
+
+<div id="info" class="info-section">
+    <div class="info-container">
+    @for (int i = 0; i < 4; i++)
+    {
+        var imagePath = $"/images/{6 + i}.jpeg";
+        <div class="info-row">
+            <div class="info-img">
+                <img src="@imagePath" alt="Info Image" />
+            </div>
+            <div class="info-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    }
+    </div>
+</div>
+
+    <div id="speedrunners" class="speedrun-section">
+    <h2>SPEEDRUNNERS</h2>
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div style="color: red; background: #330000; padding: 10px; border: 1px solid red; margin-bottom: 20px;">
+            @Model.ErrorMessage
+        </div>
+    }
+    <table class="speedrun-table">
+        <thead>
+            <tr>
+                <th>Sıra</th>
+                <th>Takma Ad</th>
+                <th>Süre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Speedrunners != null)
+            {
+                int rank = 1;
+                foreach (var run in Model.Speedrunners)
+                {
+                    <tr class="@(rank <= 3 ? $"rank-{rank}" : "")">
+                        <td>@rank.</td>
+                        <td>
+                            @run.Username
+                            @if (rank == 1) { <i class="fas fa-trophy" style="margin-left: 10px;"></i> }
+                            else if (rank == 2) { <i class="fas fa-medal" style="margin-left: 10px;"></i> }
+                            else if (rank == 3) { <i class="fas fa-medal" style="margin-left: 10px;"></i> }
+                        </td>
+                        <td>@run.Score Saniye</td>
+                    </tr>
+                    rank++;
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="gallery" class="gallery-preview-section">
+    <h2>GALERİ</h2>
+    <div class="carousel" id="galleryCarousel">
+        @foreach (var img in Model.GalleryImages)
+        {
+            <img src="/images/@img" alt="Gallery Image" loading="lazy" />
+        }
+    </div>
+    <a href="/Gallery" class="btn-more">DAHA FAZLA</a>
+</div>
+
+@section Scripts {
+
+}

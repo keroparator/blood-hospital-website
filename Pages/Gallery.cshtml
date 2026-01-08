@@ -1,0 +1,18 @@
+@page
+@model GalleryModel
+@{
+    ViewData["Title"] = "Galeri";
+}
+
+<div class="container" style="padding-top: 100px;">
+    <h1 style="text-align: center; margin-bottom: 2rem; font-size: 4rem;">GALERİ</h1>
+
+    <div class="gallery-grid">
+        @foreach (var img in Model.Images)
+        {
+            <div class="gallery-item">
+                <img src="/images/@img" alt="Gallery Image" loading="lazy" />
+            </div>
+        }
+    </div>
+</div>

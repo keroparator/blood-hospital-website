@@ -1,0 +1,29 @@
+@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<div class="auth-container">
+    <div class="auth-box">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-red);">GİRİŞ YAP</h2>
+        
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="error-message">@Model.ErrorMessage</div>
+        }
+
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="E-Posta Adresi" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Şifre" required />
+            </div>
+            <button type="submit" class="btn-submit">GİRİŞ YAP</button>
+        </form>
+
+        <a href="/Register" class="auth-link">Yeni hesap oluştur</a>
+    </div>
+</div>

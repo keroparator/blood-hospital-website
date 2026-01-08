@@ -1,0 +1,36 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="auth-container">
+    <div class="auth-box">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-red);">KAYIT OL</h2>
+
+        @if (!string.IsNullOrEmpty(Model.Message))
+        {
+            <div style="color: green; text-align: center; margin-bottom: 1rem;">@Model.Message</div>
+        }
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="error-message">@Model.ErrorMessage</div>
+        }
+
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="E-Posta Adresi" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Şifre" required />
+            </div>
+             <div class="form-group">
+                <input type="password" name="confirmPassword" class="form-control" placeholder="Şifre Tekrar" required />
+            </div>
+            <button type="submit" class="btn-submit">KAYIT OL</button>
+        </form>
+
+        <a href="/Login" class="auth-link">Hesabınız var mı? Giriş Yap</a>
+    </div>
+</div>
